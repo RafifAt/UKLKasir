@@ -12,3 +12,4 @@ data class Menu(
     @ColumnInfo(name = "jenis") var jenis: String,
     @ColumnInfo(name = "harga") var harga: Int
 )
+//febri kontol kontollll kontol kontol

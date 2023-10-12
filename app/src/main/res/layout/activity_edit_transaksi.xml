@@ -4,52 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CheckoutActivity"
+    tools:context=".EditTransaksiActivity"
     android:orientation="vertical">
-
-
-    <ImageView
-
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:src="@drawable/shape2"/>
-
 
     <TextView
         android:fontFamily="@font/poppinsregular"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="16dp"
         android:text="Nama Pelanggan"
         android:textColor="@color/black"
         android:textSize="20sp"/>
     <EditText
-        android:layout_marginTop="5dp"
         android:background="@drawable/shape"
         android:id="@+id/namaPelanggan"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginHorizontal="16dp"/>
-    <TextView
-        android:fontFamily="@font/poppinsregular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Nomor Meja"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
-    <Spinner
-        android:id="@+id/spinnerMeja"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginHorizontal="16dp"
-        android:background="#E8E8E8"/>
+
     <CheckBox
         android:fontFamily="@font/poppinsregular"
+        android:textStyle="bold"
         android:id="@+id/dibayar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,13 +35,13 @@
         android:text="Dibayar"
         android:textSize="20sp"/>
     <Button
-        android:id="@+id/checkOut"
+        android:id="@+id/simpan"
         android:backgroundTint="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
-        android:text="checkout"/>
+        android:text="simpan"/>
 
     <ImageView
 

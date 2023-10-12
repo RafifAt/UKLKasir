@@ -12,6 +12,18 @@
         android:theme="@style/Theme.App"
         tools:targetApi="31">
         <activity
+            android:name=".AddItemOnDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditTransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListDetailTransaksi"
+            android:exported="false" />
+        <activity
+            android:name=".ListTransaksiActivity"
+            android:exported="false" />
+        <activity
             android:name=".CheckoutActivity"
             android:exported="false" />
         <activity

@@ -16,7 +16,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"/>
     <Button
-        android:background="@drawable/shape"
+     android:backgroundTint="@color/black"
         android:id="@+id/checkOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

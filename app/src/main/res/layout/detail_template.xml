@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/brown"
+    android:background="@drawable/shape"
+    >
+
+    <TextView
+        android:fontFamily="@font/poppinsextrabold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/namaMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nasi Goreng"
+        android:textColor="@color/black"
+        android:textSize="22sp"/>
+    <TextView
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/hargaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp.999999"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bulet"/>
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo"/>
+
+</RelativeLayout>

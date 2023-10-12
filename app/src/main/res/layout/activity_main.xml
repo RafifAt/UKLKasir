@@ -25,9 +25,10 @@
             android:layout_height="100dp"
             android:src="@drawable/logo"/>
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign in to your account"
+            android:text="Sign-in to your account"
             android:textStyle="bold"
             android:textSize="50sp"
             android:textColor="@color/black" />
@@ -58,7 +59,7 @@
         <EditText
             android:id="@+id/textEmail"
             android:layout_marginTop="30dp"
-            android:background="@drawable/bentuk"
+            android:background="@drawable/shape"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Email"
@@ -68,7 +69,7 @@
             android:inputType="textPassword"
             android:id="@+id/textPassword"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bentuk"
+            android:background="@drawable/shape"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Password"

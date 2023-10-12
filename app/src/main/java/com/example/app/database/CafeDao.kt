@@ -1,6 +1,7 @@
-package com.example.app.database
+package com.example.uklkasir.userdatabase
 
 import androidx.room.*
+import com.example.app.database.*
 
 @Dao
 interface CafeDao {
@@ -47,13 +48,13 @@ interface CafeDao {
     @Query("SELECT * FROM Menu WHERE id_menu = :Id")
     fun getMenu(Id: Int): Menu
 
-    @Query("UPDATE Meja SET nomor_meja = :namaMeja WHERE id_meja = :id")
-    fun updateMeja(namaMeja: String, id: Int)
+    @Query("UPDATE Meja SET nomor_meja = :namaMeja, used = :Used WHERE id_meja = :id")
+    fun updateMeja(namaMeja: String, id: Int, Used: Boolean)
 
     @Delete
     fun deleteMeja(meja: Meja)
 
-    @Query("SELECT nomor_meja FROM Meja")
+    @Query("SELECT nomor_meja FROM Meja WHERE used = 0")
     fun getAllNamaMeja(): List<String>
 
     @Query("SELECT id_meja FROM Meja WHERE nomor_meja = :namaMeja")
@@ -61,4 +62,19 @@ interface CafeDao {
 
     @Query("SELECT id_transaksi FROM Transaksi WHERE tgl_transaksi = :tglTransaksi AND id_user = :idUser AND id_meja = :idMeja AND nama_pelanggan = :namaPelanggan AND status = :Status")
     fun getIdTransaksiFromOther(tglTransaksi: String, idUser: Int, idMeja: Int, namaPelanggan: String, Status: String): Int
+
+    @Query("SELECT * FROM Meja WHERE id_meja = :id")
+    fun getMeja(id: Int): Meja
+
+    @Delete
+    fun deleteTransaksi(transaksi: Transaksi)
+
+    @Query("UPDATE Transaksi SET nama_pelanggan = :namaPelanggan, id_meja = :idMeja, status = :Status WHERE id_transaksi = :idTransaksi")
+    fun updateTransaksi(namaPelanggan: String, idMeja: Int, Status: String, idTransaksi: Int)
+
+    @Query("SELECT * FROM DetailTransaksi WHERE id_transaksi = :Id")
+    fun getDetailTransaksi(Id: Int): List<DetailTransaksi>
+
+    @Query("SELECT * FROM Transaksi WHERE id_transaksi = :Id")
+    fun getTransaksi(Id: Int): Transaksi
 }

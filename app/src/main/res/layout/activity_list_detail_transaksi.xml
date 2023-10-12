@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListMejaActivity">
-
-
+    tools:context=".ListDetailTransaksi">
 
     <RelativeLayout
         android:id="@+id/relative"
@@ -15,40 +13,39 @@
         android:background="@color/black">
 
         <ImageButton
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
             android:id="@+id/buttonAdd"
-            android:layout_width="30dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="@drawable/add"
             android:backgroundTint="@color/yellow"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"/>
+            android:layout_margin="5dp"/>
 
     </RelativeLayout>
 
-    <ImageView
-        android:layout_marginTop="70dp"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/logo"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        tools:listitem="@layout/meja"
-        android:id="@+id/recyclerMeja"
+        android:id="@+id/recyclerDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/relative"
-        android:layout_marginTop="140dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"/>
 
-    <ImageView
-        android:layout_below="@id/recyclerMeja"
-        android:layout_marginTop="200dp"
+    <TextView
+        android:fontFamily="@font/poppinsextrabold"
+        android:id="@+id/total"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="125dp"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/bulet"/>
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:layout_below="@id/recyclerDetail"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        />
+
+
 
 </RelativeLayout>

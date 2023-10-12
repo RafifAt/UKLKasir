@@ -1,6 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="280dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/brown"
+    android:background="@drawable/shape"
+    android:paddingBottom="4dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bulet"/>
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo"/>
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsextrabold"
+        android:id="@+id/namaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:maxLines="1"/>
+    <TextView
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/hargaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp9999999"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:maxLines="1"
+        android:layout_below="@id/namaItem"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/hargaItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Have the better experience with explore our menu"/>
+
+
+</RelativeLayout>

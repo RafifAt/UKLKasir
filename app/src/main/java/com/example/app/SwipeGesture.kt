@@ -11,11 +11,11 @@ abstract class SwipeGesture(context: Context): ItemTouchHelper.SimpleCallback(
     0,
     ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
 ) {
-    private val deleteColor = ContextCompat.getColor(context, R.color.red)
+    private val deleteColor = ContextCompat.getColor(context, R.color.black)
     private val deleteIcon = R.drawable.delete
 
-    private val editColor = ContextCompat.getColor(context, R.color.red)
-    private val editIcon = R.drawable.editpen
+    private val editColor = ContextCompat.getColor(context, R.color.black)
+    private val editIcon = R.drawable.editmenu
 
     override fun onMove(
         recyclerView: RecyclerView,

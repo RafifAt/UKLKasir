@@ -27,9 +27,12 @@ class MainActivity : AppCompatActivity() {
             if(editEmail.text.toString().isNotEmpty() && editPassword.text.toString().isNotEmpty()){
                 var list: List<User> = db.cafeDao().login(editEmail.text.toString(), editPassword.text.toString())
                 if(list.size > 0){
-                    val moveIntent = Intent(this@MainActivity, HomeActivity::class.java)
                     val name = list[0].nama
                     val role = list[0].role
+                    var moveIntent = Intent(this@MainActivity, HomeActivity::class.java)
+                    if(role == "Manager"){
+                        moveIntent = Intent(this@MainActivity, ListTransaksiActivity::class.java)
+                    }
                     moveIntent.putExtra("name", name)
                     moveIntent.putExtra("role", role)
                     startActivity(moveIntent)

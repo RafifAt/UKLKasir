@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.uklkasir.userdatabase.CafeDao
 
 @Database(
     entities = [
@@ -13,7 +14,7 @@ import androidx.room.RoomDatabase
     User::class,
     Transaksi::class
     ],
-    version = 1
+    version = 2
 )
 abstract class CafeDatabase: RoomDatabase() {
     abstract fun cafeDao(): CafeDao
